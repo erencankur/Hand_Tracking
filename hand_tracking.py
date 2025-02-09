@@ -19,7 +19,7 @@ def count_fingers(hand_landmarks):
             if hand_landmarks.landmark[tip_id].y < hand_landmarks.landmark[tip_id - 2].y:
                 fingers_up += 1
         else:
-            if hand_landmarks.landmark[0].x < hand_landmarks.landmark[1].x: # sol
+            if hand_landmarks.landmark[0].x < hand_landmarks.landmark[1].x:
                 if hand_landmarks.landmark[4].x > hand_landmarks.landmark[2].x:
                     fingers_up += 1
             else:
